@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pago</title>
+    <link rel="stylesheet" href="css/styleCheck.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="product.html">Productos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="checkout">
+      <h2>Detalles de Pago</h2>
+      <div id="checkout-total"></div>
+      <form id="payment-form">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="name">Apellido</label>
+        <input type="text" id="lastname" name="lastname" required />
+
+        <label for="name">Correo</label>
+        <input type="text" id="correo" name="correo" required />
+
+        <label for="payment-method">Tipo de Envio</label>
+        <select id="envio-method" name="envio-method">
+          <option value="local" selected>Retiro en Tienda</option>
+          <option value="casa">Envio</option>
+        </select>
+        <label id="direcc">Direccion : Alameda #9946 </label>
+        <div id="address-fields">
+          <label> Region</label> <br />
+          <select name="region" id="region">
+            <option value="Metropolitana" selected>Region Metropolitana</option>
+          </select>
+          <br />
+          <label> Comuna</label> <br />
+          <select name="comuna" id="comuna">
+            <option value="">Seleccione una comuna</option>
+            <option value="Cerrillos">Cerrillos</option>
+            <option value="Cerro Navia">Cerro Navia</option>
+            <option value="Conchalí">Conchalí</option>
+            <option value="El Bosque">El Bosque</option>
+            <option value="Estación Central">Estación Central</option>
+            <option value="Huechuraba">Huechuraba</option>
+            <option value="Independencia">Independencia</option>
+            <option value="La Cisterna">La Cisterna</option>
+            <option value="La Florida">La Florida</option>
+            <option value="La Granja">La Granja</option>
+            <option value="La Pintana">La Pintana</option>
+            <option value="La Reina">La Reina</option>
+            <option value="Las Condes">Las Condes</option>
+            <option value="Lo Barnechea">Lo Barnechea</option>
+            <option value="Lo Espejo">Lo Espejo</option>
+            <option value="Lo Prado">Lo Prado</option>
+            <option value="Macul">Macul</option>
+            <option value="Maipú">Maipú</option>
+            <option value="Ñuñoa">Ñuñoa</option>
+            <option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</option>
+            <option value="Peñalolén">Peñalolén</option>
+            <option value="Providencia">Providencia</option>
+            <option value="Pudahuel">Pudahuel</option>
+            <option value="Quilicura">Quilicura</option>
+            <option value="Quinta Normal">Quinta Normal</option>
+            <option value="Recoleta">Recoleta</option>
+            <option value="Renca">Renca</option>
+            <option value="San Joaquín">San Joaquín</option>
+            <option value="San Miguel">San Miguel</option>
+            <option value="San Ramón">San Ramón</option>
+            <option value="Santiago">Santiago</option>
+            <option value="Vitacura">Vitacura</option>
+            <option value="Puente Alto">Puente Alto</option>
+            <option value="Pirque">Pirque</option>
+            <option value="San José de Maipo">San José de Maipo</option>
+            <option value="Colina">Colina</option>
+            <option value="Lampa">Lampa</option>
+            <option value="Tiltil">Tiltil</option>
+            <option value="San Bernardo">San Bernardo</option>
+            <option value="Buin">Buin</option>
+            <option value="Calera de Tango">Calera de Tango</option>
+            <option value="Paine">Paine</option>
+            <option value="Melipilla">Melipilla</option>
+            <option value="Alhué">Alhué</option>
+            <option value="Curacaví">Curacaví</option>
+            <option value="María Pinto">María Pinto</option>
+            <option value="San Pedro">San Pedro</option>
+            <option value="Talagante">Talagante</option>
+            <option value="El Monte">El Monte</option>
+            <option value="Isla de Maipo">Isla de Maipo</option>
+            <option value="Padre Hurtado">Padre Hurtado</option>
+            <option value="Peñaflor">Peñaflor</option>
+          </select>
+          <br />
+          <label for="address">Dirección N°/Despartamento </label> <br />
+          <input type="text" id="address" name="address" />
+        </div>
+        <button type="submit">Completar Pago</button>
+      </form>
+    </section>
+    <!-- Modal de confirmación de pago -->
+    <div id="payment-modal" class="modal">
+      <div class="modal-content">
+        <img src="images/check.png" alt="Checkmark" class="checkmark-gif" />
+        <p style="font-size: medium">Gracias por tu compra.</p>
+      </div>
+    </div>
+
+    <script src="script/checkScript.js"></script>
+  </body>
+</html>

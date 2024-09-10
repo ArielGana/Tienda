@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="css/styleIndex.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="product.html">Productos</a></li>
+          <li>
+            <a href="cart.html">Carrito <span id="cart-count">0</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="text-content">
+        <h2>Bienvenidos a Nuestra Tienda</h2>
+        <p>
+          Descubre una gran variedad de productos únicos, seleccionados
+          especialmente para ti.
+        </p>
+        <button onclick="window.location.href='product.html'">
+          Ver Productos
+        </button>
+      </div>
+      <img src="images/inicio.jpg" alt="Colección de Cactus" />
+    </div>
+    <!--- aqui iria los productos dezlisandose  ---->
+
+    <!-- Productos Destacados -->
+    <section class="featured-products">
+      <h2>Productos Destacados</h2>
+      <div class="product-slider">
+        <!-- Product Items -->
+        <div class="product-item">
+          <h3>Astrophytum Asterias Oibo</h3>
+          <img
+            src="images/astrophytum_asterias.jpg"
+            alt="Astrophytum Asterias 1"
+          />
+          <p>
+            Hermoso cactus de la especie Asterias, tamaño pequeño. <br />
+            <strong>Precio: $12,000 CLP</strong>
+          </p>
+          <div class="cart"><button>Añadir al carrito</button></div>
+        </div>
+        <div class="product-item">
+          <h3>Astrophytum Asterias Super Kabuto</h3>
+          <img
+            src="images/astrophytum_asterias2.jpg"
+            alt="Astrophytum Asterias 2"
+          />
+          <p>
+            Cactus Asterias con patrones únicos, tamaño mediano. <br />
+            <strong>Precio: $15,000 CLP</strong>
+          </p>
+          <div class="cart"><button>Añadir al carrito</button></div>
+        </div>
+        <!-- Añade más productos aquí siguiendo el mismo formato -->
+        <div class="product-item">
+          <h3>Astrophytum Nudum Fukuryu</h3>
+          <img
+            src="images/astrophytum_myrio4.jpg"
+            alt="Astrophytum Myriostigma 4"
+          />
+          <p>
+            Cactus Myriostigma de gran tamaño y crecimiento saludable.
+            <br /><strong>Precio: $21,000 CLP</strong>
+          </p>
+          <div class="cart"><button>Añadir al carrito</button></div>
+        </div>
+        <div class="product-item">
+          <h3>Astrophytum Myri. Tricostatum</h3>
+          <img
+            src="images/astrophytum_myrio5.jpg"
+            alt="Astrophytum Myriostigma 5"
+          />
+          <p>
+            Cactus Myriostigma con floración única, ejemplar raro. <br />
+            <strong>Precio: $23,000 CLP</strong>
+          </p>
+          <div class="cart"><button>Añadir al carrito</button></div>
+        </div>
+        <div class="product-item">
+          <h3>Astrophytum Myri. Ornatum</h3>
+          <img src="images/astrophytum_ornatum.jpg" alt="Astrophytum Ornatum" />
+          <p>
+            Astrophytum Ornatum con líneas blancas, cactus de gran tamaño.
+            <br /><strong>Precio: $26,000 CLP</strong>
+          </p>
+          <div class="cart"><button>Añadir al carrito</button></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
